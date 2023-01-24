@@ -8,6 +8,8 @@ import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { MensajeComponent } from './mensaje/mensaje.component';
+import { AsincronaComponent } from './asincrona/asincrona.component';
+
 
 // Libreria de Angular Material
 import {MatButtonModule} from '@angular/material/button';
@@ -30,7 +32,8 @@ import {MatIconModule} from '@angular/material/icon';
     BusquedaComponent,
     LoginComponent,
     MensajeComponent,
-    HomeComponent
+    HomeComponent,
+    AsincronaComponent
   ],
   imports: [
     CommonModule,
@@ -55,6 +58,7 @@ import {MatIconModule} from '@angular/material/icon';
     FormularioComponent,
     BusquedaComponent,
     LoginComponent,
+    AsincronaComponent,
 
     // Componentes para angular material 
     MatButtonModule,
