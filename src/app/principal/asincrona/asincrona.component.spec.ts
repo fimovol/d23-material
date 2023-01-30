@@ -34,4 +34,10 @@ describe('AsincronaComponent', () => {
   it("1 + 1 deberia ser 2",()=>{
     expect(component.sumaop(1,1)).toEqual(2)
   })
+  it("1 - 1 deberia ser 0",()=>{
+    expect(component.restaop(1,1)).toEqual(0)
+  })
+  it("4 - 1 deberia ser 3",()=>{
+    expect(component.restaop(4,1)).toEqual(3)
+  })
 });
