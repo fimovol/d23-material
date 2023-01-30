@@ -5,22 +5,30 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrincipalModule } from './principal/principal.module';
 
+
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { UserinterceptorsService } from './services/userinterceptors.service';
 import { CanactivateGuard } from './canactivate.guard';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatTableModule} from '@angular/material/table';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PrincipalModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatMenuModule,
+    MatTableModule,
+    MatSlideToggleModule
   ],
   providers: [
     {
