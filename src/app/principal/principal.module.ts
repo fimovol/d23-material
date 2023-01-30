@@ -22,6 +22,7 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatInputModule} from '@angular/material/input';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatAutocompleteModule,
     MatInputModule,
     MatDividerModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule
   ],
   exports:[
     MenuComponent,
@@ -59,16 +61,6 @@ import {MatIconModule} from '@angular/material/icon';
     BusquedaComponent,
     LoginComponent,
     AsincronaComponent,
-
-    // Componentes para angular material 
-    MatButtonModule,
-    MatMenuModule,
-    MatListModule,
-    MatSlideToggleModule,
-    MatAutocompleteModule,
-    MatInputModule,
-    MatDividerModule,
-    MatIconModule
   ]
 })
 export class PrincipalModule { }
