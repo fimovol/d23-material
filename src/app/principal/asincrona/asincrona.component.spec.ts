@@ -1,6 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { AsincronaComponent } from './asincrona.component';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('AsincronaComponent', () => {
   let component: AsincronaComponent;
@@ -8,7 +12,14 @@ describe('AsincronaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AsincronaComponent ]
+      declarations: [ AsincronaComponent ],
+      imports: [
+         MatFormFieldModule,
+         MatSlideToggleModule,
+         FormsModule,
+         MatInputModule,
+         BrowserAnimationsModule
+        ]
     })
     .compileComponents();
 
@@ -20,4 +31,7 @@ describe('AsincronaComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it("1 + 1 deberia ser 2",()=>{
+    expect(component.sumaop(1,1)).toEqual(2)
+  })
 });
