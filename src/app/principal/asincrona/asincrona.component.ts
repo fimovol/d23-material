@@ -29,13 +29,13 @@ export class AsincronaComponent {
   operacion(){
     console.log(this.suma)
     if(this.suma == true){
-      let resulta = this.num1 + this.num2
+      let resulta = this.sumaop(this.num1,this.num2)
       this.resultado = " la suma es: " +resulta.toString() +" "
     }else{
       this.resultado = ""
     }
     if(this.resta == true){
-      let resulta = this.num1 - this.num2
+      let resulta = this.restaop(this.num1,this.num2)
       this.resultado_res = " la diferencia es: " +resulta.toString() +" "
     }else{
       this.resultado_res = ""
@@ -52,5 +52,11 @@ export class AsincronaComponent {
     }else{
       this.resultado_divi = ""
     }
+  }
+  sumaop(num1:number,num2:number){
+    return num1+num2
+  }
+  restaop(num1:number,num2:number){
+    return num1-num2
   }
 }
