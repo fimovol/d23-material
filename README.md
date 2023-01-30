@@ -15,3 +15,5 @@ ng add @angular/material
 
 - crear un formulario tipo calculadora
 - realizar pruebas unitarias para verificar el comportamiento de las funciones 
+
+- src\app\principal\asincrona\asincrona.component.spec.ts
